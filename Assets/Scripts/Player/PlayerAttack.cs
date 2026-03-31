@@ -3,11 +3,13 @@ using UnityEngine;
 public class PlayerAttack : MonoBehaviour
 {
     private GameObject attackArea = default;
-
+   
     private bool attacking = false;
-
+   
     private float attackTime = 0.75f;
     private float timer = 0f;
+
+  
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -34,13 +36,16 @@ public class PlayerAttack : MonoBehaviour
                 attackArea.SetActive(attacking);
             }
         }
+
+        
     }
+
+   
 
     private void Attack()
     {
         attacking = true;
         attackArea.SetActive(attacking);
     }
-
 
 }

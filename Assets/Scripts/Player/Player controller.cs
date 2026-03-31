@@ -7,7 +7,7 @@ public class Playercontroller : MonoBehaviour
     private Rigidbody2D rb;
     private float horizontalInput;
     private bool isJumping = false;
-    private bool canJump = false;
+    public bool isGrounded = false;
     
 
     // Start is called before the first frame update
@@ -24,10 +24,10 @@ public class Playercontroller : MonoBehaviour
 
 
         // Check for jump input
-        if (Input.GetButtonDown("Jump") && !isJumping && canJump)
+        if (Input.GetButtonDown("Jump") && !isJumping && isGrounded)
         {
             isJumping = true;
-            canJump = false;
+            isGrounded = false;
             
         }
 
@@ -54,7 +54,7 @@ public class Playercontroller : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             isJumping = false;
-            canJump = true;
+            isGrounded = true;
         }
     }
 
