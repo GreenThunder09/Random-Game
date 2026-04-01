@@ -3,10 +3,14 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
     public int maxHealth = 5; 
-    private int currentHealth;
+    public int currentHealth;
+    public float speed = 5f;
+    public float currentSpeed;
+    
 
     void Start()
     {
+        currentSpeed = speed;
         currentHealth = maxHealth; 
     }
 
@@ -24,5 +28,15 @@ public class EnemyHealth : MonoBehaviour
     private void Die()
     {
         Destroy(gameObject); 
+    }
+
+    public void SetSpeed(float speed)
+    {
+        currentSpeed = speed;
+    }
+
+    public void ResetSpeed()
+    {
+        currentSpeed = speed;
     }
 }

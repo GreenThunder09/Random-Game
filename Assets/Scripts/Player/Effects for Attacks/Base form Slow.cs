@@ -5,10 +5,12 @@ public class BaseformSlow : MonoBehaviour
 {
     
     public int damageAmount = 1;
-    public float damageRate = 1f; // Damage applied every X seconds
+    public float damageRate = 2f; // Damage applied every X seconds
     public float duration = 10f; // How long the residue lasts
     private List<Collider2D> enemiesInRange = new List<Collider2D>();
-    
+    [SerializeField] float slowSpeed = 0.5f;
+
+
     public LayerMask enemyLayer;
     public LayerMask PlayerLayer;
 
@@ -25,9 +27,9 @@ public class BaseformSlow : MonoBehaviour
         if (((1 << other.gameObject.layer) & enemyLayer) != 0) // Check if the object is on the enemy layer
         {
             enemiesInRange.Add(other);
+            other.GetComponent<EnemyHealth>().SetSpeed(slowSpeed);
+            other.GetComponent<EnemyHealth>().TakeDamage(damageAmount);
         }
-
-        
     }
    
     private void OnTriggerExit2D(Collider2D other)
@@ -35,6 +37,7 @@ public class BaseformSlow : MonoBehaviour
         if (enemiesInRange.Contains(other))
         {
             enemiesInRange.Remove(other);
+            other.GetComponent<EnemyHealth>().ResetSpeed();
         }
     }
     
@@ -54,6 +57,7 @@ public class BaseformSlow : MonoBehaviour
                     if (enemyHealth != null)
                     {
                         enemyHealth.TakeDamage(damageAmount);
+                        enemyHealth.currentSpeed = enemyHealth.speed * 0.5f;
                     }
                 }
             }
