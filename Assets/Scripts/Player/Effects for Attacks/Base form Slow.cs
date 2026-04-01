@@ -3,18 +3,11 @@ using UnityEngine;
 
 public class BaseformSlow : MonoBehaviour
 {
-    
     public int damageAmount = 1;
     public float damageRate = 2f; // Damage applied every X seconds
     public float duration = 10f; // How long the residue lasts
     private List<Collider2D> enemiesInRange = new List<Collider2D>();
     [SerializeField] float slowSpeed = 0.5f;
-
-
-    public LayerMask enemyLayer;
-    public LayerMask PlayerLayer;
-
-    
 
     void Start()
     {
@@ -24,7 +17,7 @@ public class BaseformSlow : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (((1 << other.gameObject.layer) & enemyLayer) != 0) // Check if the object is on the enemy layer
+        if (other.gameObject.CompareTag("Enemy")) // Check if the object is on the enemy layer
         {
             enemiesInRange.Add(other);
             other.GetComponent<EnemyHealth>().SetSpeed(slowSpeed);
@@ -51,8 +44,6 @@ public class BaseformSlow : MonoBehaviour
                 
                 if (enemyCollider != null)
                 {
-                   
-                    
                     EnemyHealth enemyHealth = enemyCollider.GetComponent<EnemyHealth>();
                     if (enemyHealth != null)
                     {
