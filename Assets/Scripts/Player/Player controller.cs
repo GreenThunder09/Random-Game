@@ -8,7 +8,7 @@ public class Playercontroller : MonoBehaviour
     private float horizontalInput;
     private bool isJumping = false;
     public bool isGrounded = false;
-    
+
 
     // Start is called before the first frame update
     void Start()

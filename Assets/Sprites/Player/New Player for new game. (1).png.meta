@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 972a4f3b1bf83c842be0f41e46f354cb
+guid: 5adb8d9bddbd0ad4c8c455eafffd9638
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5299796509657604634
-    second: New Player for new game._0
-  - first:
-      213: -3568646798513963057
-    second: New Player for new game._1
+      213: -1503213824325666187
+    second: New Player for new game. (1)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,29 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: New Player for new game._0
-      rect:
-        serializedVersion: 2
-        x: 20
-        y: 111
-        width: 64
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6edd00c67275376b0800000000000000
-      internalID: -5299796509657604634
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: New Player for new game._1
+      name: New Player for new game. (1)_0
       rect:
         serializedVersion: 2
         x: 20
@@ -140,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fcf7dbde4ae997ec0800000000000000
-      internalID: -3568646798513963057
+      spriteID: 57abc9bbdf2832be0800000000000000
+      internalID: -1503213824325666187
       vertices: []
       indices: 
       edges: []
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      New Player for new game._0: -5299796509657604634
-      New Player for new game._1: -3568646798513963057
+      New Player for new game. (1)_0: -1503213824325666187
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
