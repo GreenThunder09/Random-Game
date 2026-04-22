@@ -27,7 +27,7 @@ public class PlayerHealth : MonoBehaviour
         {
             if (!dead)
             {
-                //anim.SetTrigger("die");
+                anim.SetTrigger("die");
                 GetComponent<Playercontroller>().enabled = false;
                 dead = true;
                 Debug.Log("You Have Died!");

@@ -2620,12 +2620,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 0.9760859, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.05, y: -1.94, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 723566134}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &519420033
 MonoBehaviour:
@@ -2689,10 +2689,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ComponentVersion: 2
-  m_LightType: 4
+  m_LightType: 3
   m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FalloffIntensity: 0.1
+  m_Color: {r: 0.8584906, g: 0.8584906, b: 0.8584906, a: 1}
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
@@ -2717,7 +2717,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 1
+  m_PointLightOuterRadius: 20
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
@@ -2736,12 +2736,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 619394800}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.3, y: -0.04, z: 0}
+  m_LocalScale: {x: -2.000976, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 723566134}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &721848146
 GameObject:
@@ -3419,7 +3419,7 @@ Transform:
   m_Children:
   - {fileID: 1215621894}
   - {fileID: 764782025}
-  - {fileID: 519420032}
+  - {fileID: 619394802}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &723566135
@@ -3437,6 +3437,7 @@ MonoBehaviour:
   moveSpeed: 5
   jumpForce: 12
   isGrounded: 0
+  anim: {fileID: 0}
 --- !u!50 &723566137
 Rigidbody2D:
   serializedVersion: 5
@@ -3513,12 +3514,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 6
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -1503213824325666187, guid: 5adb8d9bddbd0ad4c8c455eafffd9638, type: 3}
+  m_Sprite: {fileID: -6273846646669854431, guid: 8a3d04bb2bcebdb4cbeb5fe6cd948be1, type: 3}
   m_Color: {r: 0.902341, g: 1, b: 0.7971698, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.4615386, y: 1.8076923}
+  m_Size: {x: 2.5384614, y: 1.8076923}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -3588,8 +3589,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.4615386, y: 1.8076923}
-    newSize: {x: 2.4615386, y: 1.8076923}
+    oldSize: {x: 2.5384614, y: 1.8076923}
+    newSize: {x: 2.5384614, y: 1.8076923}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -4111,12 +4112,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 6
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -1503213824325666187, guid: 5adb8d9bddbd0ad4c8c455eafffd9638, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.20994282, a: 1}
+  m_Sprite: {fileID: -6273846646669854431, guid: 8a3d04bb2bcebdb4cbeb5fe6cd948be1, type: 3}
+  m_Color: {r: 0.745283, g: 0.15819688, b: 0.28252107, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.4615386, y: 1.8076923}
+  m_Size: {x: 2.5384614, y: 1.8076923}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -4201,8 +4202,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.4615386, y: 1.8076923}
-    newSize: {x: 2.4615386, y: 1.8076923}
+    oldSize: {x: 2.5384614, y: 1.8076923}
+    newSize: {x: 2.5384614, y: 1.8076923}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -4470,7 +4471,7 @@ MonoBehaviour:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 619394802}
+  - {fileID: 519420032}
   - {fileID: 1396040797}
   - {fileID: 723566134}
   - {fileID: 368051181}

@@ -9,11 +9,13 @@ public class Playercontroller : MonoBehaviour
     private bool isJumping = false;
     public bool isGrounded = false;
 
+    public Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>(); 
+        rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -21,14 +23,22 @@ public class Playercontroller : MonoBehaviour
     {
         // Get horizontal input 
         horizontalInput = Input.GetAxisRaw("Horizontal");
-
+        
+       if (horizontalInput != 0)
+        {
+            anim.SetBool("IsWalking", true);
+        }
+        else
+        {
+            anim.SetBool("IsWalking", false);
+        }
 
         // Check for jump input
         if (Input.GetButtonDown("Jump") && !isJumping && isGrounded)
         {
             isJumping = true;
             isGrounded = false;
-            
+
         }
 
         FlipPlayerSprite();
