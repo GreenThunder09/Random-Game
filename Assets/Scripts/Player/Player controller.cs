@@ -36,6 +36,7 @@ public class Playercontroller : MonoBehaviour
         // Check for jump input
         if (Input.GetButtonDown("Jump") && !isJumping && isGrounded)
         {
+            
             isJumping = true;
             isGrounded = false;
 
@@ -53,8 +54,8 @@ public class Playercontroller : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             isJumping = false;
-            
-          
+            anim.SetBool("IsJumping", true);
+
         }
     }
 
@@ -63,6 +64,7 @@ public class Playercontroller : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
+            anim.SetBool("IsJumping", false);
             isJumping = false;
             isGrounded = true;
         }
