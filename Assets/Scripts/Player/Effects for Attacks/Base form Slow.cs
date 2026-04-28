@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class BaseformSlow : MonoBehaviour
 {
-    public int damageAmount = 1;
+    public int damageAmount = 2;
     public float damageRate = 2f; // Damage applied every X seconds
     public float duration = 10f; // How long the residue lasts
     private List<Collider2D> enemiesInRange = new List<Collider2D>();

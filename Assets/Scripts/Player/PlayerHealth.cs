@@ -40,8 +40,7 @@ public class PlayerHealth : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
             TakeDamage(1);
 
-        if (Input.GetKeyDown(KeyCode.H))
-            TakeDamage(-2);
+
     }
 
 
