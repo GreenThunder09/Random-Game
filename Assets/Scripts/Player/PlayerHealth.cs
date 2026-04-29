@@ -6,12 +6,13 @@ public class PlayerHealth : MonoBehaviour
     
     public float currentHealth { get; private set; }
     private bool dead;
-    private Animator anim;
+    [SerializeField] private Animator animator;
 
+    private const string flashRedAnim = "FlashRed";
     private void Awake()
     {
         currentHealth = startingHealth;
-        anim = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
     }
 
     public void TakeDamage(float _damage)
@@ -20,14 +21,15 @@ public class PlayerHealth : MonoBehaviour
 
         if (currentHealth > 0)
         {
-            anim.SetTrigger("hurt");
+
+            animator.SetTrigger(flashRedAnim);
             //make iframes later
         }
         else
         {
             if (!dead)
             {
-                anim.SetTrigger("die");
+                animator.SetTrigger("die");
                 GetComponent<Playercontroller>().enabled = false;
                 dead = true;
                 Debug.Log("You Have Died!");
