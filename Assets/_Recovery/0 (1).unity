@@ -3456,8 +3456,8 @@ MonoBehaviour:
     m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 18
-  m_PointLightOuterRadius: 25
+  m_PointLightInnerRadius: 15
+  m_PointLightOuterRadius: 20
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
@@ -4522,7 +4522,7 @@ Animator:
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: c15b90981716e7d499370de5837e04a1, type: 2}
   m_CullingMode: 0
-  m_UpdateMode: 1
+  m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
@@ -8524,8 +8524,8 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 6
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -315881114525506257, guid: 8de73bc063f8131468777d6c033bd193, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: -6273846646669854431, guid: 8a3d04bb2bcebdb4cbeb5fe6cd948be1, type: 3}
+  m_Color: {r: 0.745283, g: 0.15819688, b: 0.28252107, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8614,7 +8614,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.131579, y: 1.5526316}
+    oldSize: {x: 2.5384614, y: 1.8076923}
     newSize: {x: 2.5384614, y: 1.8076923}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
