@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b331e4d93590a914bb7e7224b9a4b012
+guid: 8e1806fcd985e1e4a9350b39c2c0697a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6514478333417023131
-    second: WIP mana meter sprite_0
+      213: -3958748271546134585
+    second: WIP mana meter sprite (3)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WIP mana meter sprite_0
+      name: WIP mana meter sprite (3)_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 0
-        width: 92
-        height: 35
+        width: 101
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b96ec407783186a50800000000000000
-      internalID: 6514478333417023131
+      spriteID: 7cf0d4fdb63bf09c0800000000000000
+      internalID: -3958748271546134585
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      WIP mana meter sprite_0: 6514478333417023131
+      WIP mana meter sprite (3)_0: -3958748271546134585
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
